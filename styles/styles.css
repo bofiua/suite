@@ -1,22 +1,4 @@
-/* Fonts */
-@font-face {
-  font-display: swap; 
-  font-family: 'Epilogue';
-  font-style: normal;
-  font-weight: 400;
-  src: url('./fonts/epilogue-v17-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-       url('./fonts/epilogue-v17-latin-regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-}
-
-@font-face {
-  font-display: swap; 
-  font-family: 'Epilogue';
-  font-style: normal;
-  font-weight: 700;
-  src: url('./fonts/epilogue-v17-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-       url('./fonts/epilogue-v17-latin-700.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-}
-
+@import url(./typography.css);
 
 :root {
   --main_color: #e28625;
@@ -24,8 +6,8 @@
   --third_color: #004140;
   --white: #fff;
   --black: #000;
-  --main_font: "Lexend Deca";
-  --second_font: "Big Shoulders Display";
+  --main_font: "Epilogue";
+  /* --second_font: "Big Shoulders Display"; */
   --size_font: 16px;
   --padding: 40px;
   --container: 1110px;
@@ -44,7 +26,7 @@
 
 html,
 body {
-  min-width: 320px;
+
   height: 100%;
 }
 
