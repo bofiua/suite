@@ -1,14 +1,25 @@
 :root {
-  --main_color: #e28625;
-  --second_color: #006971;
-  --third_color: #004140;
   --white: #fff;
   --black: #000;
-  --main_font: "Lexend Deca";
-  --second_font: "Big Shoulders Display";
-  --size_font: 16px;
-  --padding: 40px;
+  --main_color: #172339; /* Dark blue*/
+  --accent_color: #f3ede7; /* Cream */
+  --font_color: #49566d; /* Grey */
+  --main-bg_color: #faf8f6;
+
+  --main_font: "Epilogue";
+  --size_font: 18px;
+
+  --padding: 2.5rem;
   --container: 1110px;
+
+  --primary_color: #a060ff;
+  --second_color: #cb30e3;
+  --third_color: #ffa84e;
+
+  --btn_gradient: linear-gradient(135deg, #a060ff 0%, #cb30e3 49.21%, #ffa84e 100%);
+  --box_gradient: radial-gradient(100% 100% at 100% 100%, #a060ff 0%, #cb30e3 33.18%, #ffa84e 100%);
+
+  --animatinon: 0.4s ease 0.1s;
 }
 
 *,
@@ -32,10 +43,11 @@ body {
   font-family: var(--main_font);
   font-size: var(--size_font);
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.78;
   font-style: normal;
-  color: var(--black);
-  background-color: #f3f3f3;
+  letter-spacing: 0.1px;
+  color: var(--font_color);
+  background-color: var(--main-bg_color);
 }
 
 h1,
@@ -93,10 +105,65 @@ button {
   margin: 0 auto;
   max-width: var(--container);
   padding: 0 var(--padding);
+  background-color: var(--primary_color);
 } */
 
 .container {
   margin: 0 auto;
   width: calc(100% - (var(--padding) * 2));
   max-width: var(--container);
+  /* background-color: var(--accent_color); */
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60px;
+  padding: 12px 24px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.78;
+  letter-spacing: -0.18px;
+  color: var(--main-bg_color);
+  border-radius: 6px;
+  cursor: pointer;
+}
+.btn__main {
+  position: relative;
+  z-index: 1;
+  border: 1px solid var(--main-bg_color);
+  background: var(--main_color);
+}
+.btn__main::after {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--btn_gradient);
+  opacity: 0;
+  border-radius: 5px;
+  transition: opacity var(--animatinon);
+  content: "";
+}
+.btn__main:hover::after {
+  opacity: 1;
+}
+.btn__second {
+  color: var(--main_color);
+  border: 1px solid var(--main_color);
+  transition: background var(--animatinon), color var(--animatinon);
+}
+.btn__second:hover {
+  color: var(--main-bg_color);
+  background: var(--main_color);
+}
+
+.block {
+  width: 350px;
+  height: 600px;
+  background: var(--box_gradient);
 }

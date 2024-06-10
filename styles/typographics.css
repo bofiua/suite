@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "Epilogue";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("../assets/fonts/epilogue-v17-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Epilogue";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("../assets/fonts/epilogue-v17-latin-700.woff2") format("woff2");
+}
+
+.title {
+  font-weight: 400;
+  color: var(--title_color);
+}
+.title > span {
+  font-weight: 700;
+}
+.title-xl {
+  font-size: 72px;
+  line-height: 1.08;
+  letter-spacing: -1px;
+}
+.title-l {
+  font-size: 48px;
+  line-height: 1.17;
+  letter-spacing: -0.5px;
+}
+.title-m {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.78;
+  letter-spacing: -0.18px;
+  text-transform: uppercase;
+  /* color: var(--main-bg_color); */
+}
+.title-s {
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+.quote {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.75;
+  letter-spacing: 0.1px;
+  color: var(--accent_color);
+}
+
+.footer {
+  font-size: 15px;
+  line-height: 2.13;
+  text-align: center;
+  letter-spacing: 0.0833333px;
+}
