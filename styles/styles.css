@@ -170,3 +170,12 @@ button {
 .soc-icons:hover {
   opacity: .5;
 }
+
+/* header */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 156px;
+}
+/* end header */
