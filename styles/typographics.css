@@ -16,7 +16,7 @@
 
 .title {
   font-weight: 400;
-  color: var(--title_color);
+  color: var(--main_color);
 }
 .title > span {
   font-weight: 700;

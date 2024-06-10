@@ -176,6 +176,58 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 156px;
+  min-height: 9.75rem;
 }
 /* end header */
+
+/* hero */
+.hero {
+  padding: 18px 0 146px;
+}
+.hero > .container {
+  display: grid;
+  grid-template-columns: 74.5% 17.5%;
+  grid-template-rows: 37.5rem;
+  column-gap: 6rem;
+}
+.hero__content {
+  height: 100%;
+  background-repeat: no-repeat;
+  /* background-size: 360px 600px; */
+  background-size: contain;
+  background-position: right bottom;
+  background-image: url(../assets/images/bg/image-hero-portrait@2x.webp);
+}
+.hero__title {
+  position: relative;
+  padding-top: 126px;
+  max-width: 635px;
+  margin-bottom: 2.5rem;
+}
+.hero__title::before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  /* transform: translateY(-44px); */
+  background-repeat: no-repeat;
+  background-position: right 62px top 62px;
+  background-image: url(../assets/images/patterns/pattern-curved-line-1.svg);
+  content: '';
+}
+.hero__title + p {
+  max-width: 350px;
+  margin-bottom: 3.25rem;
+}
+.hero__column {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  row-gap: 64px;
+}
+.hero__column-block {
+}
+
+/* end hero */
