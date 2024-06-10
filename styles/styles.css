@@ -162,8 +162,11 @@ button {
   background: var(--main_color);
 }
 
-.block {
-  width: 350px;
-  height: 600px;
-  background: var(--box_gradient);
+.soc-icons {
+  width: 20px;
+  height: 20px;
+  fill: var(--main_color);
+}
+.soc-icons:hover {
+  opacity: .5;
 }
