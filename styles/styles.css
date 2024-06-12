@@ -168,7 +168,7 @@ button {
   fill: var(--main_color);
 }
 .soc-icons:hover {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 /* header */
@@ -214,7 +214,7 @@ button {
   background-repeat: no-repeat;
   background-position: right 62px top 62px;
   background-image: url(../assets/images/patterns/pattern-curved-line-1.svg);
-  content: '';
+  content: "";
 }
 .hero__title + p {
   max-width: 350px;
@@ -231,3 +231,41 @@ button {
 }
 
 /* end hero */
+
+/* works */
+.works {
+}
+.works > .container {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(375px, 0.5fr) 147px 350px;
+  grid-template-rows: 545px;
+  justify-content: center;
+  justify-items: center;
+  background: var(--main_color);
+  border-radius: 15px;
+}
+.works__images {
+  margin-top: -45px;
+  width: 375px;
+  height: 600px;
+  background: url(../assets/images/jeremy/image-jeremy-large.png) no-repeat center,
+  url(../assets/images/patterns/pattern-blur.svg) no-repeat right 25px bottom / contain;
+}
+.works__decor {
+  align-self: start;
+  transform: translateY(10rem);
+}
+.work__text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+.work__text > * {
+  color: var(--accent_color);
+}
+.work__text-footer > * {
+  color: var(--accent_color);
+}
+
+/* end works */
