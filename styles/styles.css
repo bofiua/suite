@@ -4,9 +4,9 @@
   font-family: "Epilogue";
   font-style: normal;
   font-weight: 400;
-  src: url("./fonts/epilogue-v17-latin-regular.woff2") format("woff2"),
+  src: url("../assets/fonts/epilogue-v17-latin-regular.woff2") format("woff2"),
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-      url("./fonts/epilogue-v17-latin-regular.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+      url("../assets/fonts/epilogue-v17-latin-regular.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 
 @font-face {
@@ -26,8 +26,8 @@
   --white: #fff;
   --black: #000;
   --color-bg-btn: #172339;
-  /* --main-font: 'Epilogue'; */
-  /* --size-font: 16px; */
+  --main-font: "Epilogue";
+  --size-font: 16px;
   --padding: 40px;
   --container: 1110px;
   --btn-transition-effects: all 0.5s ease-out 150ms;
@@ -50,7 +50,7 @@ body {
 }
 
 body {
-  font-family: var(--main-font);
+  /* font-family: Arial, Helvetica, sans-serif; */
   font-size: var(--size-font);
   font-style: normal;
   color: var(--black);
@@ -126,6 +126,7 @@ button {
   border: 1px solid var(--color-bg-btn);
   border-radius: 6px;
   color: var(--color-bg-btn);
+  font-family: var(--main-font);
   font-weight: 700;
   font-size: 16px;
   line-height: 32px;
@@ -147,9 +148,3 @@ button {
   align-items: center;
 }
 
-.footer {
-  font-size: 55px;
-  font-family: serif;
-  text-align: center;
-  color: mediumvioletred;
-}
